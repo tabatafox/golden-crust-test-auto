@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golden Crust Live</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: 'Inter', sans-serif; 
+            background: #faf9f6; 
+            color: #2d2a26;
+            line-height: 1.6;
+        }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+        
+        /* Hero */
+        .hero {
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: linear-gradient(135deg, #faf5ef 0%, #f5ebe0 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: url('https://images.unsplash.com/photo-1509440159596-0249088772ff?w=1920&q=80') center/cover;
+            opacity: 0.15;
+        }
+        .hero-content { position: relative; z-index: 1; max-width: 700px; }
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 700;
+            color: #3d2914;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+        .hero p {
+            font-size: 1.25rem;
+            color: #6b5d4f;
+            margin-bottom: 2rem;
+        }
+        .btn {
+            display: inline-block;
+            padding: 16px 40px;
+            background: #7c9a6d;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+        }
+        .btn:hover { background: #6b8560; transform: translateY(-2px); }
+        
+        /* Footer */
+        footer {
+            padding: 40px 0;
+            text-align: center;
+            background: #f0ece4;
+            color: #8b7355;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>Golden Crust Live</h1>
+            <p>Fresh artisan bread baked daily with love</p>
+            <a href="#" class="btn">View Menu</a>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Golden Crust Live. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
